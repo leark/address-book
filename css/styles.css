@@ -47,7 +47,11 @@ input[type=text], select, textarea {
   padding: 20px;
 }
 
-#address {
+.nameC {
+  cursor: pointer;
   display: none;
 }
 
+.addressDetails {
+  display: none;
+}

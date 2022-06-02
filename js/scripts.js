@@ -7,18 +7,30 @@ $(document).ready(function () {
     const name = $('#name').val();
     const birthday = $('#birthday').val();
     const street = $('#street').val();
-    const city = $('city').val();
-    const state = $('state').val();
-    const zip = $('zip').val();
+    const city = $('#city').val();
+    const state = $('#state').val();
+    const zip = $('#zip').val();
     const phoneNumber = $('#phoneNumber').val();
     const email = $('#email').val();
     const relationship = $('input:radio[name=relationship]:checked').val();
-    const favColor = $('color').val();
-    $('.nameC').append(name);
-    $('#output').append('<p>' + street + '</p>');
-    $('#output').append('<p>' + city + '</p>');
+    const favColor = $('#color').val();
 
-    $('#address').show();
+    $('.nameC').append(name);
+    $('.birthdayC').append(birthday);
+    $('.streetC').append(street);
+    $('.cityC').append(city);
+    $('.stateC').append(state);
+    $('.zipC').append(zip);
+    $('.phoneNumberC').append(phoneNumber);
+    $('.emailC').append(email);
+    $('.relationshipC').append(relationship);
+    $('.favoriteColorC').append(favColor);
+
+    $('.nameC').toggle();
+
+    $('.nameC').click(function () {
+      $('.addressDetails').toggle();
+    });
   });
 });
 
