@@ -1,0 +1,53 @@
+body {
+  font-family:sans-serif;
+  margin: 5%;
+  background-color: rgb(221, 228, 252);
+  padding: 2%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3{
+  color: hotpink;
+}
+
+input[type=text], select, textarea {
+  /* width: 50%;  */
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 25px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+#city, #state, #zip, #color {
+  width: 50%;
+}
+
+#submit {
+  background-color: hotpink;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+#submit:hover {
+  background-color: white;
+  color: hotpink;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+#address {
+  display: none;
+}
+

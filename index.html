@@ -9,7 +9,87 @@
 </head>
 <body>
   <div class="container">
-
+    <h1>Address Book</h1>
+    <div class="row">
+      <div class="col-6">
+        <h3>New Address</h3>
+        <form id="newAddress">
+          <!-- name -->
+          <div class="form-group">
+            <label for="">Name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <!-- birthday -->
+          <div class="form-group">
+            <label for="birthday">birthday:</label>
+            <input id="birthday" class="form-control" type="date">
+          </div>
+          <!-- address -->
+          <div class="form-group">
+            <label for="">Street:</label>
+            <input id="street" class="form-control" type="text">
+            <label for="">City:</label>
+            <input id="city" class="form-control" type="text">
+            <label>State</label>
+            <select class="form-control" id="state">
+              <option value="CA">California</option>
+              <option value="OR">Oregon</option>
+              <option value="WA">Washington</option>
+            </select>
+            <label for="">Zip:</label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+          <!-- phone number -->
+          <div class="form-group">
+            <label for="">Phone Number:</label>
+            <input id="phoneNumber" class="form-control" type="tel">
+          </div>
+          <!-- email -->
+          <div class="form-group">
+            <label for="">email:</label>
+            <input id="email" class="form-control" type="email">
+          </div>
+          <!-- Relationship -->
+          <div class="form-group">
+            <label>Relationship</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="relationship" value="family" checked> Family
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="relationship" value="friend" checked> Friend
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="relationship" value="other" checked> Other
+              </label>
+            </div>
+          </div>
+          <!-- favorite color -->
+          <div class="form-group">
+            <div class="form-group">
+              <label for="color">Favorite color:</label>
+              <input id="color" class="form-control" type="color">
+            </div>
+          </div>
+          <div id="submitDiv">
+            <button id="submit" type="submit" class="btn">Submit!</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-6" id="addressColumn">
+        <h3>Addresses</h3>
+        <div id="address">
+          <h1><span class="nameC"></span></h1>
+          <p>
+            One day, <span class="birthday"></span> and <span class="person2"></span> were walking through the woods, when suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1"></span> cried. The two of them <span class="verb"></span> as quickly possible, and when they were safe, <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
